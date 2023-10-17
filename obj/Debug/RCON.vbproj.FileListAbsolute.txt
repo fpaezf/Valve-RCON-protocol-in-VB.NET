@@ -1,0 +1,9 @@
+C:\Users\Francesc\Desktop\RCON\bin\Debug\RCONClient.dll
+C:\Users\Francesc\Desktop\RCON\bin\Debug\RCONClient.pdb
+C:\Users\Francesc\Desktop\RCON\bin\Debug\RCONClient.xml
+C:\Users\Francesc\Desktop\RCON\obj\Debug\RCONClient.Resources.resources
+C:\Users\Francesc\Desktop\RCON\obj\Debug\RCON.vbproj.GenerateResource.cache
+C:\Users\Francesc\Desktop\RCON\obj\Debug\RCON.vbproj.CoreCompileInputs.cache
+C:\Users\Francesc\Desktop\RCON\obj\Debug\RCONClient.dll
+C:\Users\Francesc\Desktop\RCON\obj\Debug\RCONClient.xml
+C:\Users\Francesc\Desktop\RCON\obj\Debug\RCONClient.pdb
