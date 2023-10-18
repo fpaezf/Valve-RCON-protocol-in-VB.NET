@@ -7,3 +7,12 @@ C:\Users\Francesc\Desktop\RCON\obj\Debug\RCON.vbproj.CoreCompileInputs.cache
 C:\Users\Francesc\Desktop\RCON\obj\Debug\RCONClient.dll
 C:\Users\Francesc\Desktop\RCON\obj\Debug\RCONClient.xml
 C:\Users\Francesc\Desktop\RCON\obj\Debug\RCONClient.pdb
+F:\Visual Basic\Por acabar\Valve RCON in VB.NET\bin\Debug\RCONClient.dll
+F:\Visual Basic\Por acabar\Valve RCON in VB.NET\bin\Debug\RCONClient.pdb
+F:\Visual Basic\Por acabar\Valve RCON in VB.NET\bin\Debug\RCONClient.xml
+F:\Visual Basic\Por acabar\Valve RCON in VB.NET\obj\Debug\RCONClient.Resources.resources
+F:\Visual Basic\Por acabar\Valve RCON in VB.NET\obj\Debug\RCON.vbproj.GenerateResource.cache
+F:\Visual Basic\Por acabar\Valve RCON in VB.NET\obj\Debug\RCON.vbproj.CoreCompileInputs.cache
+F:\Visual Basic\Por acabar\Valve RCON in VB.NET\obj\Debug\RCONClient.dll
+F:\Visual Basic\Por acabar\Valve RCON in VB.NET\obj\Debug\RCONClient.xml
+F:\Visual Basic\Por acabar\Valve RCON in VB.NET\obj\Debug\RCONClient.pdb
