@@ -2,6 +2,8 @@
 This is a simple implementation of the Valve RCON protocol in Visual Basic .NET 2019 Community Edition (Framework 4.7.2).
 Whith this library/class you can connect/authenticate/send commands/receive responses from your gameserver.
 
+**More info:** https://developer.valvesoftware.com/wiki/Source_RCON_Protocol
+
 **WORKS WITH:** 
 - Counter-Strike 2
 - Counter-Strike: Global Offensive
@@ -10,7 +12,7 @@ Whith this library/class you can connect/authenticate/send commands/receive resp
  
 ## Installation
 - Navigate to https://github.com/fpaezf/Valve-RCON-protocol-in-VB.NET/releases and download the latest version.
-- Import the RconClient class or library to your project.
+- Import the **RconClient** class to your project or add a library reference.
 
 ## Usage
 
@@ -22,9 +24,9 @@ Dim serverPassword As String = "Banana1983"
 Dim RCON As New RconClient
 RCON.Connect(serverIP, serverPort)
 RCON.Authorize(serverPassword)
-If RCON.Authorized = True And RCON.Connected = True Then
-Dim a As String = RCON.SendCommand(TextBox1.Text)
-RichTextBox1.AppendText(a)
-End If
+   If RCON.Authorized = True And RCON.Connected = True Then
+      Dim a As String = RCON.SendCommand(TextBox1.Text)
+      RichTextBox1.AppendText(a)
+   End If
 RCON.Close()
 ```
