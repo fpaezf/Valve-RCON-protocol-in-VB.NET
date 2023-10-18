@@ -4,7 +4,7 @@ Whith this library/class you can connect/authenticate/send commands/receive resp
 
 **More info:** https://developer.valvesoftware.com/wiki/Source_RCON_Protocol
 
-**WORKS WITH:** 
+**TESTED WITH:** 
 - Counter-Strike 2
 - Counter-Strike: Global Offensive
 - Counter-Strike: Source
@@ -13,7 +13,7 @@ Whith this library/class you can connect/authenticate/send commands/receive resp
 ## Installation
 - Navigate to https://github.com/fpaezf/Valve-RCON-protocol-in-VB.NET/releases and download the latest version.
 - Import the **RconClient** class to your project or add a library reference.
-- Add rcon_password "your-password" to your server.cfg file.
+- Add **rcon_password "your-password"** to your **server.cfg** file.
 
 ## Usage
 ```vbnet
@@ -29,4 +29,26 @@ RCON.Authorize(serverPassword) 'Send password to authenticate
       RichTextBox1.AppendText(a) 'Append server response to RichTextBox.Text
    End If
 RCON.Close() 'Close connection to the server
+```
+## Data visualization
+If you put the server output string in a TextBox control the lines will be concatenated because of the return carriage chars. To visualize data correctly please, use RichTextBox control. 
+
+## Building RCON packets
+Both requests and responses are sent as TCP packets. Their payload follows the following basic structure:
+- Size (Integer)
+- ID (Integer)
+- Type (Integer)
+- Body (null-terminated string encoded in ASCII)
+- Empty String (Empty null-terminated string encoded in ASCII)
+
+This is how i build the packet to request authorization:
+
+```vbnet
+Dim Packet As Byte() = New Byte(CByte((4 + 4 + 4 + password.Length + 1))) {} 'Size + ID + Type + Command + Null
+Packet(0) = password.Length + 9         'Packet Size (Integer)
+Packet(4) = 99                          'Request Id (Integer between 1 and 99)
+Packet(8) = 3                           'Request packet type: 3 = SERVERDATA_AUTH request
+For X As Integer = 0 To password.Length - 1
+     Packet(12 + X) = System.Text.Encoding.UTF8.GetBytes(password(X))(0) 'Command
+Next
 ```
