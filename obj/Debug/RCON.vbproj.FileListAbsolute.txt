@@ -16,3 +16,4 @@ F:\Visual Basic\Por acabar\Valve RCON in VB.NET\obj\Debug\RCON.vbproj.CoreCompil
 F:\Visual Basic\Por acabar\Valve RCON in VB.NET\obj\Debug\RCONClient.dll
 F:\Visual Basic\Por acabar\Valve RCON in VB.NET\obj\Debug\RCONClient.xml
 F:\Visual Basic\Por acabar\Valve RCON in VB.NET\obj\Debug\RCONClient.pdb
+F:\Visual Basic\Por acabar\Valve RCON in VB.NET\obj\Debug\RCON.vbproj.AssemblyReference.cache
